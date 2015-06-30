@@ -1,0 +1,45 @@
+html {
+  font: 400 1em "Judson", serif;
+}
+
+header {
+  font: 700 0.8em "Montserrat", sans-serif;
+}
+
+header a {
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+h1 {
+  font: 700 1em "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+footer {
+  font: 400 0.8em "Montserrat", sans-serif;
+}
+
+footer a {
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.fa-heart {
+  color: #955251;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

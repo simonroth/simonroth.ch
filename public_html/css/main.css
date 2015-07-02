@@ -3,7 +3,7 @@ html {
 }
 
 header {
-  font: 700 0.8em "Montserrat", sans-serif;
+  font: 400 0.9em "Montserrat", sans-serif;
 }
 
 header a {
@@ -15,12 +15,38 @@ header a {
 }
 
 h1 {
-  font: 700 1em "Montserrat", sans-serif;
-  text-transform: uppercase;
+  font: 700 1.8em "Montserrat", sans-serif;
+}
+
+.button {
+  display: inline-block;
+  height: 2.4em;
+  padding: 0 1.2em;
+  font: 400 0.9em "Open Sans", sans-serif;
+  color: rgb(46,204,113);
+  text-decoration: none;
+  line-height: 2.4em;
+  border: 1px solid rgb(46,204,113);
+  border-radius: 0.4em;
+}
+
+.button:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(46,204,113);
+}
+
+.button .fa-envelope-o {
+  margin-right: 0.4em;
 }
 
 footer {
-  font: 400 0.8em "Montserrat", sans-serif;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font: 400 0.8em "Open Sans", sans-serif;
+  color: rgb(189,195,199);
+  text-align: center;
 }
 
 footer a {
@@ -29,17 +55,25 @@ footer a {
   text-decoration: none;
 }
 
-.fa-heart {
-  color: #955251;
+footer a .fa-heart {
+  color: rgb(239,72,54);
+}
+
+footer a:hover .fa-heart {
+  color: rgba(239,72,54,.6);
+}
+
+.hidden {
+    display: none !important;
 }
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0,0,0,0);
+  overflow: hidden;
 }

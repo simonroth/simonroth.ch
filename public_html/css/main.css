@@ -1,33 +1,51 @@
 html {
-  font: 400 1em "Judson", serif;
+  position: relative;
+  min-height: 100%;
+  font: 400 1.2em "Judson", serif;
+  text-align: center;
+}
+
+body {
+  margin: 1em 4% 5.3em 4%;
 }
 
 header {
+  margin-bottom: 4em;
   font: 400 0.9em "Montserrat", sans-serif;
 }
 
 header a {
-  padding: 1em;
+  letter-spacing: 0.3em;
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
 }
 
 h1 {
-  font: 700 1.8em "Montserrat", sans-serif;
+  margin: 0 0 1.2em 0;
+  font: 700 1.5em "Montserrat", sans-serif;
+}
+
+h1 .aside {
+  color: rgba(189,195,199,.75);
+}
+
+p {
+  margin: 1.8em 0;
+  text-align: left;
 }
 
 .button {
   display: inline-block;
   height: 2.4em;
-  padding: 0 1.2em;
+  padding: 0 1.5em;
+  margin-top: 1.2em;
   font: 400 0.9em "Open Sans", sans-serif;
+  line-height: 2.4em;
   color: rgb(46,204,113);
   text-decoration: none;
-  line-height: 2.4em;
   border: 1px solid rgb(46,204,113);
-  border-radius: 0.4em;
+  border-radius: 0.2em;
 }
 
 .button:hover {
@@ -35,8 +53,8 @@ h1 {
   background-color: rgb(46,204,113);
 }
 
-.button .fa-envelope-o {
-  margin-right: 0.4em;
+.button .fa-rocket {
+  margin-right: 0.3em;
 }
 
 footer {
@@ -44,13 +62,12 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  font: 400 0.8em "Open Sans", sans-serif;
+  margin-bottom: 1.4em;
+  font: 400 0.7em "Open Sans", sans-serif;
   color: rgb(189,195,199);
-  text-align: center;
 }
 
 footer a {
-  padding: 1em;
   color: inherit;
   text-decoration: none;
 }
@@ -64,16 +81,16 @@ footer a:hover .fa-heart {
 }
 
 .hidden {
-    display: none !important;
+  display: none !important;
 }
 
 .visuallyhidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
-  border: 0;
-  clip: rect(0,0,0,0);
+  margin: -1px;
   overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }

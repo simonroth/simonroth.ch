@@ -6,7 +6,14 @@ html {
 }
 
 body {
-  margin: 1em 4% 5.3em 4%;
+  width: 92%;
+  margin: 1em auto 5.3em;
+}
+
+@media (min-width: 34.8em) {
+  body {
+    max-width: 26.7em
+  }
 }
 
 header {

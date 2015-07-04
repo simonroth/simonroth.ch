@@ -1,7 +1,7 @@
 html {
   position: relative;
   min-height: 100%;
-  font: 400 1.2em "Judson", serif;
+  font: 400 1.2em/1.25 "Judson", serif;
   text-align: center;
 }
 
@@ -17,8 +17,8 @@ body {
 }
 
 header {
-  margin-bottom: 4em;
-  font: 400 0.9em "Montserrat", sans-serif;
+  margin-bottom: 13vh;
+  font: 400 0.8em "Montserrat", sans-serif;
 }
 
 header a {
@@ -61,7 +61,7 @@ p {
 }
 
 .button .fa-rocket {
-  margin-right: 0.3em;
+  margin-right: 0.4em;
 }
 
 footer {

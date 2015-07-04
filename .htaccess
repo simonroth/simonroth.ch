@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^simonroth.ch$ [NC]
+RewriteRule ^(.*)$ http://simonroth.ch/$1 [R=301,QSA,L]
+RewriteRule ^(.*)$ /studio/public_html/$1 [PT,L,QSA]

@@ -1,4 +1,10 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} !^simonroth.ch$ [NC]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.simonroth.ch$
 RewriteRule ^(.*)$ http://simonroth.ch/$1 [R=301,QSA,L]
+RewriteCond %{HTTP_HOST} ^www.s.imon.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^www.imon.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^imon.ch$
+RewriteRule ^(.*)$ http://s.imon.ch/$1 [R=301,QSA,L]
+RewriteCond %{HTTP_HOST} ^simonroth.ch$ [OR]
+RewriteCond %{HTTP_HOST} ^s.imon.ch$
 RewriteRule ^(.*)$ /studio/public_html/$1 [PT,L,QSA]

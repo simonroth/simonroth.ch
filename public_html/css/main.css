@@ -1,13 +1,13 @@
 html {
   position: relative;
   min-height: 100%;
-  font: 400 1.2em/1.25 "Judson", serif;
+  font: 400 1.05em/1.4 "Sorts Mill Goudy", serif;
   text-align: center;
 }
 
 body {
   width: 92%;
-  margin: 1em auto 5.3em;
+  margin: 17vh auto 5.3em;
 }
 
 @media (min-width: 34.8em) {
@@ -16,21 +16,9 @@ body {
   }
 }
 
-header {
-  margin-bottom: 13vh;
-  font: 400 0.8em "Montserrat", sans-serif;
-}
-
-header a {
-  letter-spacing: 0.3em;
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 h1 {
   margin: 0 0 1.2em 0;
-  font: 700 1.5em "Montserrat", sans-serif;
+  font: 700 1.7em "Montserrat", sans-serif;
 }
 
 h1 .aside {
@@ -47,7 +35,7 @@ p {
   height: 2.4em;
   padding: 0 1.5em;
   margin-top: 1.2em;
-  font: 400 0.9em "Open Sans", sans-serif;
+  font: 400 1em "Karla", sans-serif;
   line-height: 2.4em;
   color: rgb(46,204,113);
   text-decoration: none;
@@ -70,7 +58,7 @@ footer {
   bottom: 0;
   left: 0;
   margin-bottom: 1.4em;
-  font: 400 0.7em "Open Sans", sans-serif;
+  font: 400 0.7em "Karla", sans-serif;
   color: rgb(189,195,199);
 }
 

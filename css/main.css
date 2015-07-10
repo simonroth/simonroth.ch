@@ -30,6 +30,19 @@ p {
   text-align: left;
 }
 
+.not-found p {
+  text-align: inherit;
+}
+
+p em {
+  font-style: italic;
+}
+
+p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .button {
   display: inline-block;
   height: 2.4em;

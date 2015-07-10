@@ -1,22 +1,9 @@
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Simon Roth</title>
-    <meta name="description" content="Web &ndash; Beratung, Konzepte und Entwicklung &ndash; in Luzern">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="alternate" href="http://simonroth.ch" hreflang="de">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:700%7cSorts+Mill+Goudy:400,400italic%7cKarla">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ theme_url }}/css/normalize.css">
-    <link rel="stylesheet" href="{{ theme_url }}/css/main.css">
-  </head>
+{% include 'twig/header.twig' %}
   <body>
-    <main>
+    <main role="main">
       <h1><span class="aside">Web </span><span class="hidden"> &ndash; </span>Beratung. Konzepte. Entwicklung.</h1>
       <p><em>Hey &ndash; </em>Ich bin Simon Roth aus Luzern und möchte dich bei der Umsetzung deines Projekts unterstützen. Durch individuelle Beratung und klare Konzepte formen wir gemeinsam deine Idee bis zur Realisierung. Die Entwicklung eines nachhaltigen Produkts nach deinen Vorstellungen liegt dabei immer im Fokus der Zusammenarbeit.</p>
-      <a class="button" href="mailto:atelier@simonroth.ch"><span class="fa fa-rocket"></span>Projekt starten</a>
+      <a class="button" href="mailto:atelier@simonroth.ch" role="button"><span class="fa fa-rocket"></span>Projekt starten</a>
     </main>
     <footer>
       <a href="{{ base_url }}">Entwickelt mit <span class="fa fa-heart"></span><span class="visuallyhidden"> Liebe</span> in Luzern</a>
@@ -36,5 +23,4 @@
     </script>
     <noscript><p><img src="//piwik.s.imon.ch/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
     End Piwik Code -->
-  </body>
-</html>
+{% include 'twig/footer.twig' %}

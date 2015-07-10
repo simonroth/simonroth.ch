@@ -30,6 +30,10 @@ p {
   text-align: left;
 }
 
+.not-found p {
+  text-align: inherit;
+}
+
 p em {
   font-style: italic;
 }

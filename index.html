@@ -1,48 +1,40 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="utf-8" />
-	
-	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
-{% if meta.description %}
-	<meta name="description" content="{{ meta.description }}"> 
-{% endif %}{% if meta.robots %}
-	<meta name="robots" content="{{ meta.robots }}">
-{% endif %}
-	
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" type="text/css" />
-	<link rel="stylesheet" href="{{ theme_url }}/style.css" type="text/css" />
-	
-	<script src="{{ theme_url }}/scripts/modernizr-2.6.1.min.js"></script>
-</head>
-<body>
-
-	<header id="header">
-		<div class="inner clearfix">
-			<h1><a href="{{ base_url }}" id="logo">{{ site_title }}</a></h1>
-			<nav>
-				<a href="#" class="menu-icon"></a>
-				<ul>
-					{% for page in pages %}
-						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
-					{% endfor %}
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<section id="content">
-		<div class="inner">
-			{{ content }}
-		</div>
-	</section>
-	
-	<footer id="footer">
-		<div class="inner">
-			<a href="http://picocms.org/">Pico</a> was made by <a href="http://gilbert.pellegrom.me">Gilbert Pellegrom</a> 
-			from <a href="http://dev7studios.com">Dev7studios</a>.
-		</div>
-	</footer>
-    
-</body>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Simon Roth</title>
+    <meta name="description" content="Web &ndash; Beratung, Konzepte und Entwicklung &ndash; in Luzern">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="http://simonroth.ch" hreflang="de">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:700%7cSorts+Mill+Goudy:400,400italic%7cKarla">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/normalize.css">
+    <link rel="stylesheet" href="{{ theme_url }}/css/main.css">
+  </head>
+  <body>
+    <main>
+      <h1><span class="aside">Web </span><span class="hidden"> &ndash; </span>Beratung. Konzepte. Entwicklung.</h1>
+      <p><em>Hey &ndash; </em>Ich bin Simon Roth aus Luzern und möchte dich bei der Umsetzung deines Projekts unterstützen. Durch individuelle Beratung und klare Konzepte formen wir gemeinsam deine Idee bis zur Realisierung. Die Entwicklung eines nachhaltigen Produkts nach deinen Vorstellungen liegt dabei immer im Fokus der Zusammenarbeit.</p>
+      <a class="button" href="mailto:atelier@simonroth.ch"><span class="fa fa-rocket"></span>Projekt starten</a>
+    </main>
+    <footer>
+      <a href="{{ base_url }}">Entwickelt mit <span class="fa fa-heart"></span><span class="visuallyhidden"> Liebe</span> in Luzern</a>
+    </footer>
+    <!-- Piwik
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.s.imon.ch/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.s.imon.ch/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    End Piwik Code -->
+  </body>
 </html>

@@ -8,3 +8,5 @@ RewriteRule ^ https://%1%{REQUEST_URI} [QSA,L,R=301]
 
 RewriteCond %{HTTP_HOST} !^simonroth.ch$
 RewriteRule ^(.*)$ https://simonroth.ch/$1 [QSA,L,R=301]
+
+ErrorDocument 404 /404.html

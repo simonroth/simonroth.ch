@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "preinstall": "bundle install",
+    "start": "bundle exec jekyll serve --livereload --open-url",
+    "build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build",
+    "deploy": "npm run build && rsync -azP --delete ./_site/"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.4"
+  }
+}

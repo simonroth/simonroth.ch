@@ -1,2 +1,2 @@
 # simonroth.ch
-Personal Website of Simon Roth
+> Personal Website of Simon Roth

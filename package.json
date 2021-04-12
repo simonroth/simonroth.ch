@@ -1,13 +1,19 @@
 {
   "scripts": {
-    "preinstall": "bundle install",
-    "start": "bundle exec jekyll serve --livereload --open-url",
-    "build": "JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build",
-    "deploy": "npm run build && rsync -azP --delete ./_site/"
+    "css:watch": "postcss source/styles.css -o _build/styles.css --watch",
+    "css:build": "NODE_ENV=production postcss source/styles.css -o public/styles.css",
+    "start": "eleventy --serve & npm run css:watch",
+    "clean": "del public",
+    "html:minify": "html-minifier --input-dir public --output-dir public --collapse-whitespace --minify-css true --minify-js true --remove-comments --remove-optional-tags --sort-attributes --sort-class-name",
+    "build": "npm run clean && eleventy && npm run html:minify && npm run css:build"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.2",
-    "tailwindcss": "^1.8.8"
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.0",
+    "del-cli": "^3.0.1",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
   }
 }

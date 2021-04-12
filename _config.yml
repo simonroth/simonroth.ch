@@ -1,7 +1,0 @@
-plugins:
-  - jekyll-postcss
-exclude:
-  - package*.json
-  - postcss.config.js
-  - README.md
-  - tailwind.config.js

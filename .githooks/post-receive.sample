@@ -1,0 +1,15 @@
+#!/bin/bash
+GIT_DIR="/home/user/git/.git"
+WORK_TREE="/home/user/public_html"
+BRANCH="main"
+
+while read oldrev newrev ref
+do
+  if [ "$ref" = "refs/heads/$BRANCH" ];
+  then
+    git --git-dir=$GIT_DIR --work-tree=$WORK_TREE checkout -f $BRANCH
+    cd $WORK_TREE
+    npm install
+    npm run build
+  fi
+done

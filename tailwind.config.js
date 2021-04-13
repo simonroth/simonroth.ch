@@ -1,7 +1,13 @@
 module.exports = {
-  purge: [
-    './public/**/*.html'
-  ],
+  purge: {
+    mode: 'all',
+    preserveHtmlElements: false,
+    content: ['./public/**/*.html'],
+    options: {
+      keyframes: true,
+      variables: true,
+    },
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},

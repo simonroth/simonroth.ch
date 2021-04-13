@@ -4,7 +4,7 @@
   RewriteCond %{REQUEST_METHOD} ^GET|HEAD|PURGE$
   RewriteCond %{HTTP_HOST} ^simonroth.ch$ [NC]
   RewriteCond %{QUERY_STRING} !nocache [NC]
-  RewriteRule .* - [E=cache-control:max-age=120]
+  RewriteRule .* - [E=Cache-Control:max-age=120]
 </IfModule>
 
 <IfModule mod_rewrite.c>

@@ -1,3 +1,8 @@
+<IfModule LiteSpeed>
+  RewriteEngine On
+  RewriteRule .* - [E=cache-control:max-age=120]
+</IfModule>
+
 RewriteEngine On
 
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
@@ -7,7 +12,3 @@ RewriteCond %{HTTP_HOST} !^simonroth.ch$
 RewriteRule ^(.*)$ https://simonroth.ch/$1 [QSA,L,R=301]
 
 ErrorDocument 404 /404.html
-
-<IfModule LiteSpeed>
-  RewriteRule .* - [E=cache-control:max-age=120]
-</IfModule>

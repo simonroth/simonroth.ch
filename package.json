@@ -4,7 +4,7 @@
     "css:build": "NODE_ENV=production postcss source/styles.css -o public/styles.css",
     "start": "eleventy --serve & npm run css:watch",
     "clean": "del public",
-    "html:minify": "html-minifier --input-dir public --output-dir public --collapse-whitespace --minify-css true --minify-js true --remove-comments --remove-optional-tags --sort-attributes --sort-class-name",
+    "html:minify": "html-minifier --input-dir public --output-dir public --file-ext html --collapse-whitespace --minify-css true --minify-js true --remove-comments --remove-optional-tags --sort-attributes --sort-class-name",
     "build": "npm run clean && eleventy && npm run html:minify && npm run css:build"
   },
   "devDependencies": {

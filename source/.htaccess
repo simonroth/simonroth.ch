@@ -1,6 +1,6 @@
 <IfModule LiteSpeed>
+  CacheLookup public on
   RewriteEngine On
-  CacheEnable public /
   RewriteRule .* - [E=cache-control:max-age=120]
 </IfModule>
 

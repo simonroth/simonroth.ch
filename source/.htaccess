@@ -1,6 +1,7 @@
 <IfModule LiteSpeed>
   CacheLookup public on
   RewriteEngine On
+  RewriteCond %{REQUEST_METHOD} ^GET|HEAD|PURGE$
   RewriteCond %{HTTP_HOST} ^simonroth.ch$ [NC]
   RewriteCond %{QUERY_STRING} !nocache [NC]
   RewriteRule .* - [E=cache-control:max-age=120]

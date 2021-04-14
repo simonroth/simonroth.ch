@@ -9,4 +9,4 @@ RewriteRule ^(.*)$ https://simonroth.ch/$1 [QSA,L,R=301]
 ErrorDocument 404 /404.html
 
 ExpiresActive On
-ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/css "access plus 1 year"

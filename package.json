@@ -1,4 +1,5 @@
 {
+  "version": "2.0.0",
   "scripts": {
     "css:watch": "postcss source/styles.css -o _build/styles.css --watch",
     "css:build": "NODE_ENV=production postcss source/styles.css -o public/styles.css",

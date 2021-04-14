@@ -4,10 +4,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
   eleventyConfig.addWatchTarget("./_build/styles.css");
 
-  eleventyConfig.addShortcode("version", function() {
-    return Date.now().toString();
-  });
-
   return {
     dir: {
       input: "source",

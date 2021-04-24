@@ -8,5 +8,6 @@ RewriteRule ^(.*)$ https://simonroth.ch/$1 [QSA,L,R=301]
 
 ErrorDocument 404 /404.html
 
-ExpiresActive On
-ExpiresByType text/css "access plus 1 year"
+<filesMatch ".(css)$">
+  Header set Cache-Control "max-age=31536000, immutable"
+</filesMatch>

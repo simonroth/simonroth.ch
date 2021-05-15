@@ -11,5 +11,6 @@ do
     cd $WORK_TREE
     npm install
     npm run build
+    find . -not -path "./public*" -exec rm -rfv {} +
   fi
 done
